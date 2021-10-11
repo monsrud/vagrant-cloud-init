@@ -1,0 +1,2 @@
+instance-id: cloud-init-ubuntu-test 
+local-hostname: cloud-init-ubuntu-test 

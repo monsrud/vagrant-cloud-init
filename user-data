@@ -1,0 +1,16 @@
+#cloud-config
+
+package_update: true
+
+packages:
+ - wget
+ - curl 
+
+users:
+  - name: test 
+    groups: sudo
+    homedir: /home/test
+    shell: /bin/bash
+    sudo: ["ALL=(ALL) NOPASSWD:ALL"]
+    lock_passwd: false
+    passwd: $6$uwWMtQHloP/4JG6.$.nIp5JYtxPnmgT2ejJ2D5MqUOAKopvB.STGkH36lkoPraqKn8YaddJiYlHQYjRuOvN/m2hXDmtbPVsG70oRau0
